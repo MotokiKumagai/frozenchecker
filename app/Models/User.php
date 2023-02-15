@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'figure_id',
     ];
 
     /**
@@ -41,4 +42,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function figure()
+    {
+        return $this->belongsTo(Figure::class);
+    }
+    
+    public function items()   
+    {
+        return $this->hasMany(Item::class);  
+    }
 }
