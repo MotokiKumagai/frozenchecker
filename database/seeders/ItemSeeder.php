@@ -26,6 +26,7 @@ class ItemSeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'deleted_at' => null,
+            'user_id' => 1,
         ]);
     }
 }
