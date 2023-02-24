@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name', 50)->nullable(false);
             $table->string('email');
             $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
         });
