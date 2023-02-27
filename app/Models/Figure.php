@@ -9,8 +9,13 @@ class Figure extends Model
 {
     use HasFactory;
     
+    protected $fillable = [
+        
+    ];
+    
     public function users()   
     {
         return $this->hasMany(User::class);  
     }
+
 }

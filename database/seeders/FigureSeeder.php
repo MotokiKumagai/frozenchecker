@@ -19,7 +19,7 @@ class FigureSeeder extends Seeder
     public function run()
     {
         DB::table('figures')->insert([
-            'url' => '/frozenchecker/public/img/2756きれいな冷蔵庫.png',
+            'url' => 'https://res.cloudinary.com/dsh8ljxiv/image/upload/v1676871345/cld-sample-5.jpg',
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
